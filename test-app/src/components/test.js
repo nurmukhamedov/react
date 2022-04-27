@@ -5,7 +5,7 @@ function test () {
         <div>
             Test
             <Test2/>
-            
+           
         </div>
     )
 }
