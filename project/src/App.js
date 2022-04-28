@@ -1,5 +1,6 @@
 import "./App.css";
 import Books from "./components/Books";
+import ChildrenProp from "./components/childrenProp";
 
 function App() {
   const firstBook = [
@@ -63,6 +64,12 @@ function App() {
           );
         })}
       </div>
+      <br />
+      <ChildrenProp> 
+        About Us
+      </ChildrenProp> 
+      <br />
+      <ChildrenProp children={ <Books/>}/> 
     </div>
   );
 }
