@@ -2,6 +2,8 @@ import "./App.css";
 import Books from "./components/book/Books";
 import ChildrenProp from "./components/test/childrenProp";
 import AddNewBook from "./components/new-book/AddNewBook";
+import UseStateAdvanced from "./components/useStateAdvanced/useStateAdvanced";
+import UseStateObject from "./components/useStateAdvanced/useStateObject";
 
 function App() {
   const firstBook = [
@@ -52,25 +54,10 @@ function App() {
     },
   ];
   return (
-    <div className="container">
-      <AddNewBook />
-      <div className="book_wrapper">
-        {firstBook.map((books, index) => {
-          return (
-            <Books
-              img={books.img}
-              title={books.title}
-              author={books.author}
-              key={index}
-            />
-          );
-        })}
-      </div>
-      <br />
-      <ChildrenProp>About Us</ChildrenProp>
-      <br />
-      <ChildrenProp children={<Books />} />
-    </div>
+    <>
+    <UseStateAdvanced/>
+    <UseStateObject/>
+    </>
   );
 }
 
