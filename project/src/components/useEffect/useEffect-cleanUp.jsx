@@ -1,0 +1,23 @@
+import React, { useState, useEffect } from "react";
+
+const UseEffecCleanUp = () => {
+  const [size, setSize] = useState(window.innerWidth);
+  const checksize = () => {
+    setSize(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", checksize);
+    return () => {
+      window.removeEventListener("resize", checksize);
+    };
+  }, []);
+  return (
+    <>
+      <h1>Window</h1>
+      <h2>{size}</h2>
+    </>
+  );
+};
+
+export default UseEffecCleanUp;

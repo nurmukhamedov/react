@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { data } from "../data";
+import { data } from "../../data";
 
 const UseStateAdvanced = () => {
   //   console.log(useState("Hello world"));
