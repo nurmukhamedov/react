@@ -41,7 +41,6 @@ const UseReducer = () => {
         </div>
         <button type="submit">Add</button>
       </form>
-
       {state.people.map(person => {
         return (
           <div key={person.id} className="item">
