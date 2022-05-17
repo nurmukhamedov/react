@@ -1,11 +1,11 @@
 import "./App.css";
-import ContextApi from "./components/context-api/context-api";
+import Index from "./components/props-type";
 
 function App() {
   return (
     <>
       <div className="container">
-        <ContextApi />
+        <Index />
       </div>
     </>
   );
