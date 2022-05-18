@@ -1,12 +1,9 @@
 import "./App.css";
-import Index from "./components/props-type";
-
+import MainRouter from "./components/Router/MainRouter";
 function App() {
   return (
     <>
-      <div className="container">
-        <Index />
-      </div>
+      <MainRouter />
     </>
   );
 }
